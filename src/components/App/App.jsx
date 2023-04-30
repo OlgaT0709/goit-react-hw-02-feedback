@@ -61,7 +61,7 @@ export class App extends Component {
     return (
       <Container>
         <Section title="Please, leave feedback">
-          <FeedbackOptions options={['good', 'neutral', 'bad']} onClickFeedback={this.onClickBtn} />      
+          <FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={this.onClickBtn} />      
         </Section> 
 
         

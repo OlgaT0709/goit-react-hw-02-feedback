@@ -3,7 +3,7 @@ import {FeedbackOptionsBtn } from './FeedbackOptions.styled';
 
 // 3) Винеси блок кнопок в компонент <FeedbackOptions options={} onLeaveFeedback={}>.
 
-export const FeedbackOptions = ({options, onClickFeedback }) => {
+export const FeedbackOptions = ({options, onLeaveFeedback }) => {
     return ( 
         <>
             { options.map(option => (
@@ -11,7 +11,7 @@ export const FeedbackOptions = ({options, onClickFeedback }) => {
                         key={option}
                         type="button"
                         name={option}                    
-                        onClick={() => onClickFeedback(option)}>
+                        onClick={() => onLeaveFeedback(option)}>
                 {option}
                 </FeedbackOptionsBtn>
             ))
